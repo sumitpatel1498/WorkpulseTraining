@@ -15,6 +15,7 @@ namespace WebTaskTwo.Controllers
                 new Student() { StudentId = 3, Profession="Teacher",Name = "Bill",  Age = 25, Gender = "Male", Address="Dewas", AddmissionDate = new DateTime(), Fees= 7000} ,
                 new Student() { StudentId = 4, Profession="Student",Name = "Ram" , Age = 20, Gender = "Male", Address="Dewas", AddmissionDate = new DateTime(), Fees= 8000 } ,
                 new Student() { StudentId = 5, Profession="Teacher",Name = "Ron" , Age = 31, Gender = "Female", Address="Dewas", AddmissionDate = new DateTime(), Fees= 2000 } ,
+                new Student() { StudentId = 5, Profession="Teacher",Name = "Ron" , Age = 31, Gender = "Female", Address="Dewas", AddmissionDate = new DateTime(), Fees= 2000 } ,
                 new Student() { StudentId = 6, Profession="Teacher",Name = "Chris" , Age = 17, Gender = "Male", Address="Dewas", AddmissionDate = new DateTime(), Fees= 1000 } ,
                 new Student() { StudentId = 7, Profession="Student",Name = "Rob" , Age = 19, Gender = "Male", Address="Dewas", AddmissionDate = new DateTime(), Fees= 500 }
             };
