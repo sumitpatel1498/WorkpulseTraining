@@ -23,8 +23,8 @@ namespace WebTaskTwo.Models
         [DataType(DataType.Date)]
         public DateTime? AddmissionDate { get; set; }
         public int Fees { get; set; }
-        [Required(ErrorMessage ="Please click on checkbox")]
-        public bool FeesDone{ get; set; }
+        
+        
 
     }
 }

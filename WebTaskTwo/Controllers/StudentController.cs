@@ -50,10 +50,12 @@ namespace WebTaskTwo.Controllers
             }
             return View("edit", std);
         }
-        public ActionResult Details()
+        public ActionResult Details(int id)
         {
-           
-            return View(studentList.OrderBy(s => s.Fees).ToList());
+            
+           var stddet = studentList.Where(s => s.StudentId == id).FirstOrDefault();
+            ViewBag.student = stddet;
+           return View();
 
         }
         
@@ -62,7 +64,7 @@ namespace WebTaskTwo.Controllers
         {
             var student = studentList.Where(s => s.StudentId == id).FirstOrDefault();
             studentList.Remove(student);
-            return View("Index");
+            return View();
         }
 
 

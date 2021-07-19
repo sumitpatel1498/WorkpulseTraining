@@ -1,6 +1,4 @@
-﻿@*@model WebTaskTwo.Models.Student*@
-@model IEnumerable<WebTaskTwo.Models.Student>
-@{
+﻿@{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -10,55 +8,62 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Profession)
+            Profession
         </th>
+        <td>
+            @ViewBag.Student.Profession
+        </td>
+    </tr>
+    <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            Name
         </th>
+        <td>
+            @ViewBag.Student.Name
+        </td>
+    </tr>
+    <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Age)
+            Age
         </th>
+        <td>
+            @ViewBag.Student.Age
+        </td>
+    </tr>
+    <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Gender)
+            Gender
         </th>
+        <td>
+            @ViewBag.Student.Gender
+        </td>
+    </tr>
+    <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Address)
+            Address
         </th>
+        <td>
+            @ViewBag.Student.Address
+        </td>
+    </tr>
+    <tr>
         <th>
-            @Html.DisplayNameFor(model => model.AddmissionDate)
+            AddmissionDate
         </th>
+        <td>
+            @ViewBag.Student.AddmissionDate
+        </td>
+    </tr>
+    <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Fees)
+            Fees
         </th>
-
+        <td>
+            @ViewBag.Student.Fees
+        </td>
     </tr>
 
-    @foreach (var item in Model)
-    {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.Profession)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Name)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Age)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Gender)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Address)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.AddmissionDate)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Fees)
-    </td>
-
-</tr>
-    }
 </table>
+
+
 
