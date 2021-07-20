@@ -23,8 +23,5 @@ namespace WebTaskTwo.Models
         [DataType(DataType.Date)]
         public DateTime? AddmissionDate { get; set; }
         public int Fees { get; set; }
-        
-        
-
     }
 }

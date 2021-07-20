@@ -5,21 +5,21 @@
 
 <h2>Details</h2>
 
-<table class="table">
-    <tr>
-        <th>
-            Profession
-        </th>
-        <td>
-            @ViewBag.Student.Profession
-        </td>
-    </tr>
+<table class="table table-bordered table-hover">
     <tr>
         <th>
             Name
         </th>
         <td>
             @ViewBag.Student.Name
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Profession
+        </th>
+        <td>
+            @ViewBag.Student.Profession
         </td>
     </tr>
     <tr>
@@ -48,7 +48,7 @@
     </tr>
     <tr>
         <th>
-            AddmissionDate
+            Addmission Date
         </th>
         <td>
             @ViewBag.Student.AddmissionDate
@@ -64,6 +64,8 @@
     </tr>
 
 </table>
-
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
 
 

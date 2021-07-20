@@ -37,29 +37,21 @@ namespace WebTaskTwo.Controllers
         {
             if (ModelState.IsValid)
             { //checking model state
-
-
-
                 var student = studentList.Where(s => s.StudentId == std.StudentId).FirstOrDefault();
                 studentList.Remove(student);
                 studentList.Add(std);
-
-
-
                 return RedirectToAction("Index");
             }
             return View("edit", std);
         }
         public ActionResult Details(int id)
         {
-            
            var stddet = studentList.Where(s => s.StudentId == id).FirstOrDefault();
-            ViewBag.student = stddet;
+            ViewBag.Student = stddet;
            return View();
-
         }
         
-        [HttpPost]
+        [HttpDelete]
         public ActionResult Delete(int id) 
         {
             var student = studentList.Where(s => s.StudentId == id).FirstOrDefault();

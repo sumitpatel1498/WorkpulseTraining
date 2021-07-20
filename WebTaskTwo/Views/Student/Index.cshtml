@@ -7,13 +7,13 @@
 <h2>Index</h2>
 
 
-<table class="table">
+<table class="table table-bordered table-hover">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Profession)
+            @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.Profession)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Age)
@@ -22,16 +22,16 @@
             @Html.DisplayNameFor(model => model.Gender)
         </th>
     </tr>
-
+    
 
     @foreach (var item in Model)
     {
 <tr>
     <td>
-        @Html.DisplayFor(modelItem=> item.Profession)
+        @Html.DisplayFor(modelItem => item.Name)
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.Name)
+        @Html.DisplayFor(modelItem => item.Profession)
     </td>
     <td>
         @Html.DisplayFor(modelItem => item.Age)
@@ -46,11 +46,6 @@
     </td>
 </tr>
     }
-
-
-
-
-
 </table>
 
 
